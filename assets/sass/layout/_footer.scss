@@ -1,0 +1,35 @@
+/* Footer Layout */
+.footer {
+    text-align: center;
+    background-color: black;
+    padding: 1em;
+    color: $white;
+    @include medium {
+        display: inline-flex;
+    }
+    &__item {
+        @include medium {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+        p { 
+            margin: 0.8em 0;
+            padding: 0 1em;
+            font-family: $poppins;
+            @include medium {
+                padding: 1em;
+            }
+        }
+    }
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    @include medium {
+        flex-direction: row;
+    }
+}

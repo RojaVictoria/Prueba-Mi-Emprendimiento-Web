@@ -1,0 +1,24 @@
+/* Courses section Layout */
+.courses {
+    margin: 1em;
+    border: 1px solid $charcoal;
+}
+
+.card {
+    margin: 1em;
+    padding: .5em;
+    border: 1px dotted $charcoal;
+    &__title {
+        padding-top: .5em;
+    }
+    &__content {
+        padding-top: .5em;
+        line-height: 1.6;
+    }
+    &__footer {
+        padding-top: .5em;
+    }
+    &__icons i {
+        padding: .5em .3em;
+    }
+}

@@ -1,0 +1,35 @@
+/* Grid */
+.container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template: 55px 1fr 1fr 1fr 1fr / 100%;
+    grid-template-areas: "navbar" "hero" "courses" "about" "footer";
+  }
+
+@media (min-width: 768px) {
+    .container {
+      grid-template: 55px 1fr 1fr 1fr / 50% 50%;
+      grid-template-areas: "navbar navbar" "hero hero" "courses about" "footer footer";
+    }
+}
+
+[data-grid-area="navbar"] {
+    grid-area: navbar;
+}
+
+[data-grid-area="hero"] {
+    grid-area: hero;
+}
+
+[data-grid-area="courses"] {
+    grid-area: courses;
+}
+
+[data-grid-area="about"] {
+    grid-area: about;
+}
+
+[data-grid-area="footer"] {
+    grid-area: footer;
+}

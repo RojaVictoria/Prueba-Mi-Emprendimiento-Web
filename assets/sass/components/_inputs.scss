@@ -1,0 +1,13 @@
+/* Input component */
+.footer input {
+    width: 50%;
+    padding: 0.2em;
+    margin: .8em 0;
+    margin: auto;
+    box-sizing: border-box;
+    font-size: $medium;
+    display: flex;
+    &:focus {
+        background-color: $tangerine;
+    }
+}

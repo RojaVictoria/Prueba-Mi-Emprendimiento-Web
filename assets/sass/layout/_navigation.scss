@@ -1,0 +1,75 @@
+/* Navigation Layout */
+.navigation {
+    position: relative;
+    background-color: $black;
+    &__logo {
+        position: absolute;
+        padding: 0.5em 0;
+        padding-left: 2em;
+        width: 2.5em;
+        height: 2.5em;
+    }
+    &__container {
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+        @include medium {
+            max-height: 100%;
+        }
+    }
+    &__item {
+        a {
+        display: block;
+        text-align: right;
+        padding: .5em 0;
+        padding-right: 2.5em;
+        font-family: $poppins;
+        font-size: $small;
+        font-weight: $bold;
+        color: $white;
+        text-decoration: none;
+        background-color: $black;
+            @include medium {
+                background-color: $black;
+                padding-top: 1.2em;
+                padding-bottom: .75em;
+            }
+        }
+    }
+}
+
+@include medium { 
+    .navigation__list {
+        display: flex;
+        justify-content: flex-end;
+        margin: inherit;
+        padding: inherit;
+        list-style-type: none;
+    }
+}
+
+.collapsible {
+    text-align: right;
+    label {
+    color: $white;
+    display: block;
+    padding-top: .4em;
+    padding-right: 1.5em;
+    font-size: 1.8rem;
+        &:hover {
+            color: $orange;
+        }
+        @include medium {
+            display: none;
+        }
+    }
+}
+
+#menu {
+    display: none;
+}
+
+input:checked ~ .navigation__container {
+    max-height: 100%;
+}
+

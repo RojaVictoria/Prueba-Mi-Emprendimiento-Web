@@ -1,0 +1,11 @@
+/* Hero Section Layout */
+.hero {
+    background-image: url('../../../assets/img/desarrolloweb2021t.svg');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center top;
+    height: 300px;
+    @include medium {
+        height: 350px;
+    }
+}
